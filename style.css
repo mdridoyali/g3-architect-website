@@ -13,7 +13,7 @@ body{
     background: rgb(249, 136, 7);
     color: white;
     border: none;
-    padding: 15px 24px;
+    padding: 20px 25px;
     margin: 40px 0;
     font-weight: bold;
     border-radius: 8px;
@@ -24,12 +24,13 @@ body{
 header{
     background: #f8e6cd7f;
     padding: 50px 180px;
-    border:1px solid #131313;
+    margin-bottom: 50px;
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 .nav-title{
     font-size: 2.5rem;
@@ -38,10 +39,10 @@ nav{
 }
 nav > ul{
     display: flex;
+    gap: 35px;
 }
 nav li{
     list-style: none;
-    margin-right: 30px;
     font-weight: 500;
     font-size: 1rem;
 
@@ -68,3 +69,81 @@ nav li a{
     width: 100%;
 }
 /* header section end */
+
+
+
+
+
+/* main style */
+main{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+/* teams section start */
+.teams-container{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.teams-img-container{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 1rem;
+     width: 60%;
+}
+.teams-img-container img{
+    width: 100%;
+}
+.teams-content{
+     padding: 0px 0px;
+     width: 40%;
+}
+
+
+.quick{
+    font-size:1.6rem ;
+    color: #606060;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.features{
+    font-size:1.8rem ;
+    color: #ff8400;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.teams-title{
+    font-family: 'Work Sans', sans-serif;
+}
+.teams-desc{
+    font-size: 0.8rem;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+
+/* responsive media queary */
+
+/* mobile devise */
+@media screen and (max-width:576px) {
+    header{  padding: 10px 10px; }
+    nav{ flex-direction: column; }
+    .banner-title{ font-size: 2.5rem; }
+    .teams-container{ flex-direction: column-reverse; }
+    .teams-content{  width: 80%; }
+    .teams-img-container{ width: 90%; }
+    main{ max-width: 100%; }
+}
+
+/* tablet or medium devise */
+@media screen and (min-width:576px) and (max-width:992px) {
+    header{  padding: 50px;}
+    nav{ flex-direction: column; }
+    main{  max-width: 90%; }
+
+
+}
+
+
+
