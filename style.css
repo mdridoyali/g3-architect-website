@@ -1,0 +1,70 @@
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,400;1,900&family=Handlee&family=Montserrat&family=Open+Sans:wght@400;500;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Handlee', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.btn-primary{
+    background: rgb(249, 136, 7);
+    color: white;
+    border: none;
+    padding: 15px 24px;
+    margin: 40px 0;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* header section start */
+header{
+    background: #f8e6cd7f;
+    padding: 50px 180px;
+    border:1px solid #131313;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #131313;
+}
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+nav li a{
+    text-decoration: none;
+    color: #424242;
+}
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+    margin-top: 30px;
+}
+.banner-desc{
+    color: #272727;
+}
+.banner img{
+    width: 100%;
+}
+/* header section end */
